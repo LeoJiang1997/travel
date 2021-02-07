@@ -43,7 +43,7 @@ export default {
     background: #fff !important
   .wrapper
       overflow:hidden
-      width: 100%;
+      width: 100%
       height: 50vw
       .swiper-img
           width:100%
