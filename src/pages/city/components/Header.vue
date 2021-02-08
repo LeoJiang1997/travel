@@ -26,10 +26,10 @@ export default {
      font-size .32rem
      .header-back
          position: absolute
-         top: 0
-         left: 0
+         top:0
+         left:0
          width: .64rem
-         text-alin: center
+         text-align: center
          font-size: .4rem
          color: #fff
 </style>
