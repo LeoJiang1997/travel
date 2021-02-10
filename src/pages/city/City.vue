@@ -1,16 +1,10 @@
 <template>
-  <div>
-    <city-header></city-header>
-    <city-search></city-search>
-    <city-list :cities="cities"
-               :hot="hotCities"
-               :letter="letter">
-    </city-list>
-    <city-alphabet
-       :cities="cities"
-       @change="handleLetterChange"
-    ></city-alphabet>
-  </div>
+   <div>
+     <city-header></city-header>
+     <city-search :cities="cities"></city-search>
+     <city-list :cities="cities" :hot="hotCities" :letter="letter"></city-list>
+     <city-alphabet :cities="cities"></city-alphabet>
+   </div>
 </template>
 
 <script>
