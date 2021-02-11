@@ -1,13 +1,15 @@
 <template>
   <ul class="list">
-    <li class="item"
-        v-for="item of letters"
-        :key="item"
-        :ref="item"
-        @touchstart="handleTouchStart"
-        @touchmove="handleTouchMove"
-        @touchend="handleTouchEnd"
-        @click="handleLetterClick">
+    <li
+      class="item"
+      v-for="item of letters"
+      :key="item"
+      :ref="item"
+      @touchstart="handleTouchStart"
+      @touchmove="handleTouchMove"
+      @touchend="handleTouchEnd"
+      @click="handleLetterClick"
+    >
       {{item}}
     </li>
   </ul>
@@ -45,9 +47,6 @@ export default {
     handleTouchStart () {
       this.touchStatus = true
     },
-    handleTouchEnd () {
-      this.touchStatus = false
-    },
     handleTouchMove (e) {
       if (this.touchStatus) {
         if (this.timer) {
@@ -56,9 +55,14 @@ export default {
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 79
           const index = Math.floor((touchY - this.startY) / 20)
-          if (index >= 0 && index < this.letters.length) { this.$emit('change', this.letters[index]) }
-        }, 16)
+          if (index >= 0 && index < this.letters.length) {
+            this.$emit('change', this.letters[index])
+          }
+        }, 8)
       }
+    },
+    handleTouchEnd () {
+      this.touchStatus = false
     }
   }
 }
