@@ -10,6 +10,7 @@ import fastclick from 'fastclick'
 import 'styles/iconfont.css'
 import 'swiper/swiper-bundle.css'
 import Swiper, { Pagination, Navigation } from 'swiper'
+import store from './store'
 Swiper.use([Pagination, Navigation])
 
 Vue.config.productionTip = false
@@ -20,6 +21,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: {
     App
   },
