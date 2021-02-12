@@ -78,6 +78,7 @@ export default {
   updated () {
     this.scroll.refresh()
   },
+  // eslint-disable-next-line no-dupe-keys
   watch: {
     letter () {
       if (this.letter) {

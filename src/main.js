@@ -6,7 +6,7 @@ import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'styles/reset.css'
 import 'styles/border.css'
-import fastclick from 'fastclick'
+
 import 'styles/iconfont.css'
 import 'swiper/swiper-bundle.css'
 import Swiper, { Pagination, Navigation } from 'swiper'
@@ -14,7 +14,7 @@ import store from './store'
 Swiper.use([Pagination, Navigation])
 
 Vue.config.productionTip = false
-fastclick.attach(document.body)
+
 Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
