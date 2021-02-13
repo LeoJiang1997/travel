@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-     @import '~styles/varibles.styl'
+  @import '~styles/varibles.styl'
   .header-abs
     position: absolute
     left: .2rem
@@ -69,6 +69,7 @@ export default {
       color: #fff
       font-size: .4rem
   .header-fixed
+    z-index: 2
     position: fixed
     top: 0
     left: 0
