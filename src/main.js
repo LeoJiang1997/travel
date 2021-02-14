@@ -6,7 +6,7 @@ import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'styles/reset.css'
 import 'styles/border.css'
-
+import 'babel-polyfill'
 import 'styles/iconfont.css'
 import 'swiper/swiper-bundle.css'
 import Swiper, { Pagination, Navigation } from 'swiper'
